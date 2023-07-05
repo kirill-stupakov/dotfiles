@@ -37,7 +37,7 @@ M.capabilities.textDocument.completion.completionItem = {
   },
 }
 
-local lspconfig = require "lspconfig"
+local lspconfig = require("lspconfig");
 
 lspconfig.lua_ls.setup {
   on_attach = M.on_attach,
@@ -62,13 +62,14 @@ lspconfig.lua_ls.setup {
   },
 }
 
-local lsp_providers = { "rust_analyzer", "pyright", "tsserver", "cssls" }
+lspconfig.rust_analyzer.setup {
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
-for _, provider in ipairs(lsp_providers) do
-  lspconfig[provider].setup {
-    on_attach = M.on_attach,
-    capabilities = M.capabilities,
-  }
-end
+lspconfig.pyright.setup {
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
 
 return M

@@ -19,7 +19,8 @@ local sources = {
   b.formatting.clang_format,
 
   b.formatting.black,
-  b.formatting.isort
+  b.formatting.isort,
+  b.code_actions.gitsigns
 }
 
 null_ls.setup {
