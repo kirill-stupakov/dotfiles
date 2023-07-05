@@ -43,7 +43,7 @@ M.ui = {
 
   -- lazyload it when there are 1+ buffers
   tabufline = {
-    show_numbers = false,
+    show_numbers = true,
     enabled = true,
     lazyload = true,
     overriden_modules = nil,
@@ -51,7 +51,7 @@ M.ui = {
 
   -- nvdash (dashboard)
   nvdash = {
-    load_on_startup = false,
+    load_on_startup = true,
 
     header = {
       "           ▄ ▄                   ",
