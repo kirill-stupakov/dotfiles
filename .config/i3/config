@@ -218,7 +218,6 @@ for_window [class="^.*"] border pixel 1
 
 # Launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh --blocks
-exec xrandr --dpi 160
 exec feh --bg-scale --zoom fill ~/Downloads/va8ns2zrkina1.jpg
 exec picom
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
