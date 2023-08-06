@@ -3,6 +3,15 @@
 ---@type MappingsTable
 local M = {}
 
+M.tmux = {
+    n = {
+        ["<C-h>"] = { "<cmd> TmuxNaviagateLeft<CR>", "window left"},
+        ["<C-l>"] = { "<cmd> TmuxNaviagateRight<CR>", "window right"},
+        ["<C-j>"] = { "<cmd> TmuxNaviagateDown<CR>", "window down"},
+        ["<C-k>"] = { "<cmd> TmuxNaviagateUp<CR>", "window up"},
+    }
+}
+
 M.trouble = {
   n = {
     ["<leader>xx"] = { "<cmd>TroubleToggle<cr>", "toggle trouble", opts = { silent = true, noremap = true }},
