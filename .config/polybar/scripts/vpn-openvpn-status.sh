@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 
-pgrep -a openvpn$ | head -n 1 | awk '{print $NF }' | cut -d '.' -f 1 && echo Offline
+CONNECTION_NAME=universe-data
+
+STATUS=$(nmcli -g GENERAL.STATE connection show $CONNECTION_NAME)
+
+if [ -z $STATUS ]; then
+    STATUS=offline
+fi
+
+echo "$CONNECTION_NAME: $STATUS"
