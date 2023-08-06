@@ -120,6 +120,22 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Define monitors
+set $monitor_primary HDMI-2
+set $monitor_secondary eDP-1
+
+# Assign workspaces to monitors
+workspace $ws1 output $monitor_primary
+workspace $ws2 output $monitor_primary
+workspace $ws3 output $monitor_primary
+workspace $ws4 output $monitor_primary
+workspace $ws5 output $monitor_primary
+workspace $ws6 output $monitor_primary
+workspace $ws7 output $monitor_primary
+workspace $ws8 output $monitor_primary
+workspace $ws9 output $monitor_primary
+workspace $ws10 output $monitor_primary
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -217,8 +233,10 @@ gaps inner 8px
 for_window [class="^.*"] border pixel 1
 
 # Launch polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh --blocks
-exec feh --bg-scale --zoom fill ~/Downloads/va8ns2zrkina1.jpg
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec feh --bg-scale --zoom fill ~/Downloads/wallpaper.png
 exec picom
+exec xrandr --output $monitor_primary --primary
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
