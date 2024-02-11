@@ -101,6 +101,12 @@ M.mason = {
 M.nvimtree = {
   git = {
     enable = true,
+    ignore = false,
+  },
+
+  view = {
+    width = 45,
+    hide_root_folder = false,
   },
 
   renderer = {

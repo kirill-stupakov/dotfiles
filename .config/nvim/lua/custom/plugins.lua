@@ -3,6 +3,27 @@ local overrides = require("custom.configs.overrides")
 ---@type NvPluginSpec[]
 local plugins = {
   {
+    'ellisonleao/gruvbox.nvim',
+    priority = 1000,
+    lazy = false
+  },
+  {
+    "xiyaowong/transparent.nvim",
+    lazy = false,
+    config = function()
+      require("transparent").setup({
+        groups = { -- table: default groups
+            'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
+            'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
+            'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
+            'SignColumn', 'CursorLineNr', 'EndOfBuffer',
+        },
+        extra_groups = {"NvimTreeNormal"}, -- table: additional groups that should be cleared
+        exclude_groups = {}, -- table: groups you don't want to clear
+      })
+    end
+  },
+  {
     "tpope/vim-obsession",
     lazy = false,
   },
@@ -14,6 +35,14 @@ local plugins = {
     "ThePrimeagen/vim-be-good",
     cmd = {"VimBeGood"},
   },
+  {
+    "edluffy/hologram.nvim",
+    config = function()
+      reqire("holoram").setup({
+        auto_display = true,
+      })
+    end,
+  },
 
   {
     "folke/trouble.nvim",
@@ -24,6 +53,7 @@ local plugins = {
       -- refer to the configuration section below
     },
   },
+  { 'nmac427/guess-indent.nvim' },
   {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features

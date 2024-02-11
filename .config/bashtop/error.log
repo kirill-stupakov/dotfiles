@@ -1,0 +1,61 @@
+ 
+New instance of bashtop version: 0.9.25 Pid: 19061
+ 
+New instance of bashtop version: 0.9.25 Pid: 24665
+ 
+New instance of bashtop version: 0.9.25 Pid: 48708
+ 
+New instance of bashtop version: 0.9.25 Pid: 24065
+ 
+New instance of bashtop version: 0.9.25 Pid: 89360
+ 
+New instance of bashtop version: 0.9.25 Pid: 35763
+ 
+New instance of bashtop version: 0.9.25 Pid: 886553
+ 
+New instance of bashtop version: 0.9.25 Pid: 956249
+ 
+New instance of bashtop version: 0.9.25 Pid: 41418
+ 
+New instance of bashtop version: 0.9.25 Pid: 529391
+/usr/bin/bashtop: line 1334: ((: Pid: Program:       Arguments:                          Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ": Program:       Arguments:                          Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Pid: Program:       Arguments:                          Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ": Program:       Arguments:                          Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1: syntax error: operand expected (error token is "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1")
+/usr/bin/bashtop: line 1466: ((: /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1: syntax error: operand expected (error token is "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1")
+/usr/bin/bashtop: line 1468: /: syntax error: operand expected (error token is "/")
+ 
+New instance of bashtop version: 0.9.25 Pid: 243494
+ 
+New instance of bashtop version: 0.9.25 Pid: 5268
+ 
+New instance of bashtop version: 0.9.25 Pid: 42342
+ 
+New instance of bashtop version: 0.9.25 Pid: 67256
+ 
+New instance of bashtop version: 0.9.25 Pid: 70554
+ 
+New instance of bashtop version: 0.9.25 Pid: 10648
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+10:54:10 PM ERROR: On line 4634 
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+10:54:11 PM ERROR: On line 4634 (MUTED!)
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+PSUTIL ERROR! Command: get_net('wlp7s0f3u2u1')
+'wlp7s0f3u2u1'
+ 
+New instance of bashtop version: 0.9.25 Pid: 7378
+ 
+New instance of bashtop version: 0.9.25 Pid: 64595
+ 
+New instance of bashtop version: 0.9.25 Pid: 94125
+ 
+New instance of bashtop version: 0.9.25 Pid: 190316

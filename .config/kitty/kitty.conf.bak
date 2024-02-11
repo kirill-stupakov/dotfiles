@@ -785,7 +785,6 @@ resize_draw_strategy static
 #: value of static means draw the current window contents, mostly
 #: unchanged. A value of scale means draw the current window contents
 #: scaled. A value of blank means draw a blank window. A value of size
-#: means show the window size in cells.
 
 resize_in_steps no
 
@@ -960,7 +959,7 @@ inactive_tab_font_style normal
 
 #: The foreground and background colors.
 
-background_opacity 1
+background_opacity 0.9
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2175,6 +2174,6 @@ map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Dark
+# Atom One Light
 include current-theme.conf
 # END_KITTY_THEME
