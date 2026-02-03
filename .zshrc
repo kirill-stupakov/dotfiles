@@ -9,10 +9,14 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+eval $(thefuck --alias)
+
 alias v="nvim"
 alias ls="lsd"
 alias s="TERM=xterm-256color kitty +kitten ssh"
 alias c="clear"
+alias cu="sudo docker compose up --force-recreate"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/home/kirill/bin/Sencha/Cmd:$PATH"
+
